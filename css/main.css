@@ -2,34 +2,63 @@
 body{width: 100%; height: auto; }
 
 /* 헤더 */
-header { width: 100%; height: 900px; 
-        background: url("../img/gosung_sky.jpg") no-repeat      ;
-background-size: cover;}
-/* .gosung-sky { width: 100%; height: 500px;
-        background: url("../img/gosung_sky.jpg")no-repeat top;
-        } */
-header .container { height: 40px; 
+header { width: 100%; height: 80px; position: absolute; top: 0;
+        border-bottom: 1px solid rgb(0, 51, 117); padding-bottom: 50px; z-index: 999;}
+
+header .container { width: 1200px; height: 40px; margin: 0 auto;
         display: flex; justify-content: space-between;
         padding: 50px; }
-.title p { font-size: 25px; font-weight: 800;}
-#menu ul {display: flex; flex-flow: row wrap; }
-#menu ul li {margin-left: 60px; font-size: 20px;}
-.line { border-bottom: 1px solid #333;}
-.active_bg { background-color: #fff;}
+.title p { font-size: 25px; font-weight: 800; color: rgb(0, 51, 117);}
 
-section article{height: 1000px; text-align: center;}
-article h1 { font-size: 45px; font-weight: lighter;  
+#menu ul { display: flex; flex-flow: row wrap; }
+#menu ul li { margin-left: 60px; font-size: 20px;}
+
+.active_bg { position: fixed; background-color: #fff;
+        border: none;}
+
+section { width: 100%; height: 950px; text-align: center;}
+#home { background: url("../img/gosung_sky.jpg") no-repeat fixed;
+        background-size: cover; 
+        display: flex; justify-content: center; align-items: center;}
+.paper { width: 100%; height: 300px; 
+         background:url("../img/paper.png")no-repeat 800px;
+         transform: translateY(70px);  opacity: 0; transition: all 1s; }
+section .container h1 { font-size: 45px; font-weight: lighter;  
         display: inline-block;
         width: 200px; border-bottom: 1px solid #666;
-        padding: 100px 0 20px 0;}
-#aboutme,#work { background-color: rgb(249, 255, 213);}
+        padding: 150px 0 20px 0;
+        margin-bottom: 100px;}
 
 /* 나에 대해 */
-#aboutme span {  color: #666;}
+#aboutme .container { width: 1200px; height: 100%; margin: 0 auto; }
+.profile { display: flex; flex-direction: row; justify-content: space-between;}
+.profile .photo { width: 30%; height: 400px; background-color: #888; 
+        position: relative;}
+.photo-line { width: 100%; height: 100%; 
+        position: absolute; top: 10px; left: 10px;
+         border: 2px solid rgba(31, 31, 31, 0.5);}
+#aboutme .container .text-box { width: 60%; text-align: left;}
 
-.top-btn { position: fixed; bottom: 15px; right: 15px; 
-        border: 1px solid #eee;    
+#aboutme p { font-size:20px; display: inline; line-height: 36px;
+        font-weight: 300;}
+#aboutme span { width: 120px; color: #888; display: inline-block;
+}
+
+
+/* skill */
+#skill .container { width: 1200px; height: 100%; margin: 0 auto;}
+.tool-logo { display: flex; flex-flow: row wrap; justify-content: center;}
+.circle { width: 250px; height: 250px; background-color: #fff;
+        border-radius: 50%; margin: 20px;
+         display: flex; flex-direction: column; align-items: center;
         }
-.top-btn a{ width: 100%; height: 100%; line-height: 60px;  
-        background: white url('../img/topBtn.png')no-repeat center 20%;
-padding: 20px;}
+        
+.circle .center { font-family: "Roboto Mono"; font-size: 35px; font-weight: bolder; }
+
+
+
+/* .top-btn { position: fixed; bottom: 15px; right: 15px; 
+          border: 1px solid #eee;}
+.top-btn a { width: 100%; height: 100%; line-height: 60px;  
+          background: white url('../img/topBtn.png')no-repeat center 20%;
+          padding: 20px;} */

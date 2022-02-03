@@ -8,18 +8,7 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script>
-        $(function(){
-            $(window).on('scroll',function(){
-            scrollTop = $(window).scrollTop();
-
-            if(scrollTop>10){
-            $('header .container').addClass('active_bg');
-            }else{
-            $('header .container').removeClass('active_bg');
-            }
-        });
-    </script>
+    <script src="js/hyon.js"></script>
 </head>
 <body>
     <div>
@@ -30,40 +19,95 @@
                 </div>
                 <div id="menu">
                     <ul>
+                        <li><a href="#home">home</a></li>
                         <li><a href="#aboutme">about me</a></li>
                         <li><a href="#skill">skill</a></li>
                         <li><a href="#work">work</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="line">
-                <p></p>
-            </div>
+            </div>            
         </header>
-        <section id="fullpage">
-                <article id="aboutme" class="section active">
-                    <h1>about me</h1>
-                    <div class="">
-                        <p><span>이름</span> 김효은</p>
+        <section id="home">
+            <div class="paper">
+            </div>
+        </section>
+        <section id="aboutme">  
+            <div class="container">
+                <h1>about me</h1>
+                <div class="profile">
+                    <div class="photo">
+                        <div class="photo-line"></div>
                     </div>
-                    
-                </article>
-                <article id="skill" class="section active">
-                    <h1>skill</h1>
-                    
+                    <div class="text-box">
+                        <p><span>이름</span>김효은<br>
+                        <span>생년월일</span>81.11.21<br>
+                        <span>주소</span>경기도 안산시<br>
+                        <span>학력</span>~2003.2 인덕대학 시각디자인과 졸업<br>
+                        <span>경력</span>2003.3~2006.1 로얄인쇄 포장디자이너<br>
+                        <span></span>2006.11~2009.11 천지인커뮤니케이션 PPT디자인팀<br>
+                        <span></span>2009.11~2010.6 비즈앤북스 PPT디자인팀<br>
+                        <span>수료내역</span>2021.9.27 ~  2022.2.22 <br>
+                        <span></span>라인컴퓨터아트학원(디지털디자인) 반응형UIUX웹퍼블리셔디자인<br>
+                        <span>자격증</span> &middot; 정보처리기능사 2급<br>
+                        <span></span> &middot; 웹디자인기능사(필기)</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+        <section id="skill">
+            <div class="container">
+                <h1>skill</h1>
+                <div class="tool-logo">
+                    <div class="circle">
+                        <img src="img/html.png" alt="" style="width: 80px;">
+                        <span class="center">92%</span>
+                    </div>
+                    <div class="circle">
+                        <img src="img/css.png" alt="" style="width: 80px;">
+                        <span class="center">92%</span>
 
-                </article>
-                <article id="work" class="section active">
-                    <h1>work</h1>
-                </article>
-                <article id="contact" class="section active">
-                    <h1>contact</h1>
-                </article>
-        </section>    
+                    </div>
+                    <div class="circle">
+                        <img src="img/js.png" alt="" style="width: 90px;">
+                        <span class="center">82%</span>
+
+                    </div>
+                    <div class="circle">
+                        <img src="img/jquery.png" alt="" style="width: 200px;">
+                        <span class="center">92%</span>
+
+                    </div>
+                    <div class="circle">
+                        <img src="img/photoshop-6.png" alt="" style="width: 80px;">
+                        <span class="center">92%</span>
+
+                    </div>
+                    <div class="circle">
+                        <img src="img/illustrator-1.png" alt="" style="width: 80px;">
+                        <span class="center">92%</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <div class="container">
+                <h1>work</h1>
+            </div>
+            
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h1>contact</h1>
+            </div>
+            
+        </section>
     </div>
-    <div class="top-btn">
+    <!-- <div class="top-btn">
         <a href="#">top</a>
-    </div>
+    </div> -->
 </body>
 </html>
