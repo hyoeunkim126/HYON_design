@@ -43,17 +43,21 @@ section .container h1 { font-size: 45px; font-weight: lighter;
 #aboutme .container .text-box { width: 60%; text-align: left;}
 
 #aboutme p { font-size:20px; display: inline; line-height: 36px;
-        font-weight: 300;}
+        font-weight: 500;}
 #aboutme span { width: 120px; color: #888; display: inline-block;
 }
 
 
 /* skill */
 #skill .container { width: 1200px; height: 100%; margin: 0 auto;}
-.tool-logo { display: flex; flex-flow: row wrap; justify-content: center;}
-.circle { width: 250px; height: 250px; background-color: #fff;
-        border-radius: 50%; margin: 20px;
-         display: flex; flex-direction: column; align-items: center;
+.skill-title { font-size: 22px; text-align: left; margin: 20px;}
+.skill-title:before { content: ""; width: 20px; height: 15px;
+        display: inline-block;
+        background: url(../img/checkmark.svg) no-repeat center;}
+.tool-logo { display: flex; flex-flow: row wrap; justify-content:left;}
+.circle { width: 150px; height: 150px; margin: 10px;
+        border-radius: 50%; background-color: rgb(233, 228, 214);
+        display: flex; flex-flow: row column; align-items: center; justify-content: center;
         }
         
 .circle .center { font-family: "Roboto Mono"; font-size: 35px; font-weight: bolder; }
