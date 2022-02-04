@@ -8,18 +8,18 @@ header { width: 100%; height: 80px; position: absolute; top: 0;
 header .container { width: 1200px; height: 40px; margin: 0 auto;
         display: flex; justify-content: space-between;
         padding: 50px; }
-.title p { font-size: 25px; font-weight: 800; 
-        }
+.title p { font-size: 35px; font-weight: bold; 
+         color: #fff;}
 
 #menu ul { display: flex; flex-flow: row wrap; }
-#menu ul li { margin-left: 60px; font-size: 20px;}
+#menu ul li { margin-left: 60px; font-size: 22px; font-weight: 600;}
 
 .active_bg { position: fixed; 
         background: linear-gradient(to right,rgba(238, 174, 202, 1) 0%,
         rgba(148, 187, 233, 1) 100%);
         border: none;}
 
-section { width: 100%; height: 950px; text-align: center;}
+section { width: 100%; height: 900px; text-align: center;}
 #home { background: url("../img/gosung_sky.jpg") no-repeat fixed;
         background-size: cover; 
         display: flex; justify-content: center; align-items: center;}
@@ -29,8 +29,8 @@ section { width: 100%; height: 950px; text-align: center;}
 section .container h1 { font-size: 45px; font-weight: lighter;  
         display: inline-block;
         width: 200px; border-bottom: 1px solid #666;
-        padding: 150px 0 20px 0;
-        margin-bottom: 100px;}
+        padding: 130px 0 20px 0;
+        margin-bottom: 50px;}
 
 /* 나에 대해 */
 #aboutme .container { width: 1200px; height: 100%; margin: 0 auto; }
@@ -50,19 +50,20 @@ section .container h1 { font-size: 45px; font-weight: lighter;
 
 /* skill */
 #skill .container { width: 1200px; height: 100%; margin: 0 auto;}
-.skill-title { font-size: 22px; text-align: left; margin: 20px;}
+.skill-title { font-size: 26px; text-align: left; margin: 20px;}
+.skill-title:nth-child(2){ margin-top: 20px;}
 .skill-title:before { content: ""; width: 20px; height: 15px;
         display: inline-block;
         background: url(../img/checkmark.svg) no-repeat center;}
-.tool-logo { display: flex; flex-flow: row wrap; justify-content:left;}
+.tool-logo { display: flex; flex-flow: row wrap; justify-content:left;
+                align-items: center;}
 .circle { width: 150px; height: 150px; margin: 10px;
-        border-radius: 50%; background-color: rgb(233, 228, 214);
+        border-radius: 50%; background-color: rgb(243, 239, 229);
         display: flex; flex-flow: row column; align-items: center; justify-content: center;
         }
         
-.circle .center { font-family: "Roboto Mono"; font-size: 35px; font-weight: bolder; }
-
-
+.tool-logo p { font-size: 20px; width: 30; text-align: left; 
+        line-height: 30px; display: inline; padding-left: 20px;}
 
 /* .top-btn { position: fixed; bottom: 15px; right: 15px; 
           border: 1px solid #eee;}
