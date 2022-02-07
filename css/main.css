@@ -4,8 +4,8 @@ body{width: 100%; height: auto; }
 
 /* 헤더 */
 header { width: 100%; height: 60px; position: absolute; top: 0;
-        border-bottom: 1px solid rgb(0, 51, 117); padding-bottom: 50px; 
-        z-index: 999;}
+        border-bottom: 1px solid #fff; padding-bottom: 50px; 
+        z-index: 999; font-variant: small-caps;}
 
 header .container { height: 40px; padding: 35px; 
         display: flex; justify-content: space-between;}
@@ -28,7 +28,7 @@ section { width: 100%; height: 900px; text-align: center;}
          background:url("../img/paper.png")no-repeat 800px;
          transform: translateY(70px);  opacity: 0; transition: all 1s; }
 section .container h1 { font-size: 45px; font-weight: lighter;  
-        display: inline-block;
+        font-variant: small-caps; display: inline-block; 
         width: 200px; border-bottom: 1px solid #666;
         padding: 100px 0 20px 0;
         margin-bottom: 50px;}
@@ -45,9 +45,11 @@ section .container h1 { font-size: 45px; font-weight: lighter;
 
 #aboutme p { font-size:20px; display: inline; line-height: 36px;
         font-weight: 500;}
-#aboutme span { width: 120px; color: #888; display: inline-block;
-}
-
+#aboutme .text-box span { width: 120px; color: #888; display: inline-block;}
+.hash-tag { margin: 50px;}
+.hash-tag+div span { font-size: 22px; border: 1px solid rgba(148, 187, 233);
+                border-radius: 50px; padding: 10px 20px; margin: 10px;
+                color: rgba(148, 187, 233);}
 
 /* skill */
 #skill .container { height: 100%; }
@@ -69,15 +71,22 @@ section .container h1 { font-size: 45px; font-weight: lighter;
         line-height: 30px; display: inline; padding-left: 10px;}
 
 /* work */
-.work-list li { float: left; width: 15%; font-size: 22px; 
-                font-weight: 600; margin-right: 20px;}
-.work-list li:after { content: "|"; display: block; color:#888; 
-        font-size: 13px; margin: -18px -200px 0 0;}
-.work-list li:last-child:after { content: "";}
-.work-list li:hover { color:rgb(148, 187, 233);}
+.work-list li { width: 200px; float: left; font-size: 18px;
+                font-weight: 600; padding: 10px 0; background: url(../img/lnb-dot.gif)no-repeat right; }
+                .work-list li:last-child { background: none;}
+.work-list li:hover { background-color: rgb(148, 187, 233); 
+                color: #fff;
+                border-radius: 50px; }
+.work-view { padding-top: 100px;}
+.work-view li { clear: both; display: flex; justify-content: space-between;
+align-items: center;}
+.work-view li div { width: 40%; text-align: left; }
 
-/* .top-btn { position: fixed; bottom: 15px; right: 15px; 
-          border: 1px solid #eee;}
-.top-btn a { width: 100%; height: 100%; line-height: 60px;  
-          background: white url('../img/topBtn.png')no-repeat center 20%;
-          padding: 20px;} */
+.work-view li h5 {font-size: 24px;
+                margin-bottom: 20px;}
+.work-view li p { font-size: 20px; line-height: 25px; margin-bottom: 50px;}
+.main-btn,.sub-btn { font-size: 18px; margin-right: 10px;
+        padding: 10px 30px; border: 1px solid #666;
+        border-radius: 50px;}
+.main-btn:hover,.sub-btn:hover { background-color: #eee ; border: #eee;}
+.work-view img { width: 100%;}

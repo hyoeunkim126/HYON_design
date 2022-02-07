@@ -89,3 +89,17 @@ $(function(){
       }
   });
 });
+
+// work menu 클릭시 포트폴리오 view
+$(function(){
+  var workmenu = $(".work-list li");
+  var contents = $(".work-view li");
+
+  workmenu.click(function(){
+      var index=$(this).index();
+
+      var view = contents.eq(index);
+      contents.not(view).fadeOut("fast");
+      view.fadeIn();
+  });
+});
