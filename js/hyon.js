@@ -9,12 +9,38 @@ $(document).ready(function(){
   //       $('.paper').css("transform","translateY(0px)").css("opacity","1");
   //     } else{
   //       $('.paper').css("transform","translateY(0px)").css("opacity","0");
-
   //     }
-      
-      
-
   // });
+});
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.navi-menu a[href*=' + sectionId + ']').classList.add('on')
+        }else{
+            document.querySelector('.navi-menu a[href*=' + sectionId + ']').classList.remove('on')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+
+// 메뉴 활성화시 on
+$(function(){
+ $('#menu ul li a').click(function(){
+   $('#menu ul li a:first-child').removeClass('on');
+   $(this).addClass('on');
+   $(this).siblings().removeClass('on');
+   
+ });
 });
 
 
@@ -30,10 +56,10 @@ var currentScrollTop=0;
         currentScrollTop = $(window).scrollTop();
         if(currentScrollTop > 10) {
             $('header').addClass('active_bg');
-            $('.title p').css('color', '#000');
+            $('.title p a').css('color', '#000');
             }else{
             $('header').removeClass('active_bg');
-            $('.title p').css('color', '#fff');
+            $('.title p a ').css('color', '#fff');
 
             }
         }
@@ -65,15 +91,15 @@ $(function(){
         $('#skill').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
       }
-      // work
-      var s3=$('#work').offset().top;
+      // portpolio
+      var s3=$('#portpolio').offset().top;
       if(ws > s3-400){
-        $('#work').css('background-color', '#fff') //흰바탕 활성
+        $('#portpolio').css('background-color', '#fff') //흰바탕 활성
                       .css('opacity', '1');
         $('#skill').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
       }else {
-        $('#work').css('background-color', '#eee') //비활성
+        $('#portpolio').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
       }
       // contact
@@ -81,7 +107,7 @@ $(function(){
       if(ws > s4-400){
         $('#contact').css('background-color', '#fff') //흰바탕 활성
                       .css('opacity', '1');
-        $('#work').css('background-color', '#eee') //비활성
+        $('#portpolio').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
       }else {
         $('#contact').css('background-color', '#eee') //비활성
@@ -101,5 +127,7 @@ $(function(){
       var view = contents.eq(index);
       contents.not(view).fadeOut("fast");
       view.fadeIn();
+      $(this).addClass('on-color');
+      $(this).siblings().removeClass('on-color');
   });
 });

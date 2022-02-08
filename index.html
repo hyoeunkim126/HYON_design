@@ -15,14 +15,14 @@
         <header>
             <div class="container">
                 <div class="title">
-                    <p>hyon's web portpolio</p>
+                    <p><a href="#">hyon's web portpolio</a></p>
                 </div>
-                <div id="menu">
+                <div id="menu" class="navi-menu">
                     <ul>
-                        <li><a href="#home">home</a></li>
+                        <li><a href="#home" class="on">home</a></li>
                         <li><a href="#aboutme">about me</a></li>
                         <li><a href="#skill">skill</a></li>
-                        <li><a href="#work">work</a></li>
+                        <li><a href="#portpolio">portpolio</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
                 </div>
@@ -52,6 +52,7 @@
                         <span></span> &middot; 워드프로세서 2급<br>
                         <span></span> &middot; 웹디자인기능사(필기)</p>
                     </div>
+                    <div class="dot"></div>
                 </div>
                 <h3 class="hash-tag">나의 해시태그</h3>
                 <div>
@@ -114,12 +115,12 @@
                 </div>
             </div>
         </section>
-        <section id="work">
+        <section id="portpolio">
             <div class="container">
-                <h1>work</h1>
+                <h1>portpolio</h1>
                 <div>
                     <ul class="work-list">
-                        <li>Bookcube</li>
+                        <li class="on-color">Bookcube</li>
                         <li>Eva Armisen</li>
                         <li>Leica Camera Korea</li>
                         <li>Nexus</li>
@@ -130,25 +131,76 @@
                 <div class="">
                     <ul class="work-view">
                         <li>
-                            <div>
-                                <h5>Bookcube Website</h5>
-                                <p>기존사이트를 참고하여 카카오톡 ajax으로 책정보를 불러와 제작하였습니다.</p>
-                                <a href="https://hyoeunkim126.github.io/bookcube/index.html" target="_blank" class="main-btn">main page
-                                    <i class="ion ion-md-arrow-round-forward"></i>
-                                </a>
-                                <a href="https://hyoeunkim126.github.io/bookcube/sub.html" target="_blank" class="sub-btn">sub page</a>
+                            <h5>인터넷 서점</h5>
+                            <h3>북큐브 웹사이트</h3>
+                            <p>카카오 open API 사용하여 ajax으로 책정보를 불러와 작업하였습니다. </p>
+                            <a href="https://hyoeunkim126.github.io/bookcube/index.html" target="_blank" class="main-btn">main page
+                                <i class="ion ion-md-arrow-round-forward"></i>
+                            </a>
+                            <a href="https://hyoeunkim126.github.io/bookcube/sub.html" target="_blank" class="sub-btn">sub page</a>
 
-                            </div>
                             <div class="view-img">
-                                <img src="img/view6.png" alt="">
                             </div>
-
                         </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <h5>행복을 그리는 화가</h5>
+                            <h3>에바 알머슨 웹사이트</h3>
+                            <p>기존사이트에서 개선점을 찾아 작가의 작품들을 한눈에 볼 수 있도록 원페이지 느낌으로 제작하였습니다.</p>
+                            <a href="https://hyoeunkim126.github.io/portpolio_5/index.html" target="_blank" class="main-btn">main page
+                                <i class="ion ion-md-arrow-round-forward"></i>
+                            </a>
+                            <div class="view-img">
+                            </div>
+                        </li>
+                        <li>
+                            <h5>시각적 즐거움과 지속적인 가치</h5>
+                            <h3>라이카 카메라 웹사이트</h3>
+                            <p>요즘 트렌드에 맞는 반응형 웹페이지로 리뉴얼 프로젝트를 진행하였습니다.</p>
+                            <a href="https://hyoeunkim126.github.io/portpolio_4/index.html" target="_blank" class="main-btn">main page
+                                <i class="ion ion-md-arrow-round-forward"></i>
+                            </a>
+                            <a href="https://hyoeunkim126.github.io/portpolio_4/sub.html" target="_blank" class="sub-btn">sub page</a>
+
+                            <div class="view-img">
+                            </div>
+                        </li>
+                        <li>
+                            <h5>라이프스타일 공간제안</h5>
+                            <h3>넥서스 웹사이트</h3>
+                            <p>요즘 트렌드에 맞는 반응형 웹페이지로 리뉴얼 프로젝트를 진행하였습니다.</p>
+                            <a href="https://hyoeunkim126.github.io/portpolio_3/index.html" target="_blank" class="main-btn">main page
+                                <i class="ion ion-md-arrow-round-forward"></i>
+                            </a>
+                            <a href="https://hyoeunkim126.github.io/portpolio_3/sub_fontanaarte.html" target="_blank" class="sub-btn">sub page</a>
+
+                            <div class="view-img">
+                            </div>
+                        </li>
+                        <li>
+                            <h5>세대를 아우르는 곰표 굿즈</h5>
+                            <h3>곰표 하우스 웹사이트</h3>
+                            <p>4명이 팀을 이루어 작업하여 협업의 중요성을 느끼게 해 준 프로젝트입니다. 
+                                오랜역사를 지니고 있는 밀가루 곰표브랜드가 젊은 층에게 관심을 이끌고자 매거진형식으로 만들었습니다. </p>
+                            <!-- <a href="https://hyoeunkim126.github.io/1team_project_gompyo/index.html" target="_blank" class="main-btn">main page
+                                <i class="ion ion-md-arrow-round-forward"></i>
+                            </a> -->
+                            <a href="https://hyoeunkim126.github.io/1team_project_gompyo/sub1.html" target="_blank" class="sub-btn">sub page</a>
+
+                            <div class="view-img">
+                            </div>
+                        </li>
+                        <li>
+                            <h5>대한민국 베이커리</h5>
+                            <h3>파리바게트 웹사이트</h3>
+                            <p>Html, Css 배우기 시작할 즈음에 만든 첫 프로젝트입니다. 용기내서 배우기 시작할 때라 저에게는 흥미롭고 재미있었던 작업이었습니다.</p>
+                            <a href="https://hyoeunkim126.github.io/portpolio_git/index.html" target="_blank" class="main-btn">main page
+                                <i class="ion ion-md-arrow-round-forward"></i>
+                            </a>
+                            <a href="https://hyoeunkim126.github.io/portpolio_git/sub.html" target="_blank" class="sub-btn">sub page</a>
+
+                            <div class="view-img">
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -156,9 +208,26 @@
         </section>
         <section id="contact">
             <div class="container">
-                <h1>contact</h1>
+                <h1>contact me</h1>
+                <div class="contact-info">
+                    <div class="phone">
+                        <h6>phone</h6>
+                        <p>010-9809-8780</p>
+                    </div>
+                    <div class="email">
+                        <h6>email</h6>
+                        <p>hyoeun126@naver.com</p>
+                    </div>
+                    <div class="instar">
+                        <h6>instagram</h6>
+                        <p>@hyon_2021</p>
+                    </div>
+                </div>
             </div>
-            
+            <div class="c-bottom">
+                <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다. Thank you!:-)</p>
+                <p>©KIM hyoeun. All right reserved</p>
+            </div>
         </section>
     </div>
     

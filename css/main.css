@@ -1,4 +1,11 @@
 @charset "UTF-8";
+
+@font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+}
 body{width: 100%; height: auto; }
 .container { width: 1200px; margin: 0 auto;}
 
@@ -9,18 +16,19 @@ header { width: 100%; height: 60px; position: absolute; top: 0;
 
 header .container { height: 40px; padding: 35px; 
         display: flex; justify-content: space-between;}
-.title p { font-size: 35px; font-weight: bold; 
+.title p a { font-size: 35px; font-weight: bold; 
          color: #fff;}
 
 #menu ul { display: flex; flex-flow: row wrap; }
 #menu ul li { margin-left: 60px; font-size: 22px; font-weight: 600;}
-
+#menu ul li .on { color: #fff;}
 .active_bg { position: fixed; 
         background: linear-gradient(to right,rgba(238, 174, 202, 1) 0%,
         rgba(148, 187, 233, 1) 100%);
         border: none;}
 
 section { width: 100%; height: 900px; text-align: center;}
+/*  배경이미지 */
 #home { background: url("../img/gosung_sky.jpg") no-repeat fixed;
         background-size: cover; 
         display: flex; justify-content: center; align-items: center;}
@@ -71,22 +79,48 @@ section .container h1 { font-size: 45px; font-weight: lighter;
         line-height: 30px; display: inline; padding-left: 10px;}
 
 /* work */
-.work-list li { width: 200px; float: left; font-size: 18px;
-                font-weight: 600; padding: 10px 0; background: url(../img/lnb-dot.gif)no-repeat right; }
-                .work-list li:last-child { background: none;}
-.work-list li:hover { background-color: rgb(148, 187, 233); 
-                color: #fff;
-                border-radius: 50px; }
-.work-view { padding-top: 100px;}
-.work-view li { clear: both; display: flex; justify-content: space-between;
-align-items: center;}
-.work-view li div { width: 40%; text-align: left; }
-
-.work-view li h5 {font-size: 24px;
+.work-list { height: 30px; display: flex; flex-flow: row wrap;
+        justify-content: space-around; margin-bottom: 50px;}
+.work-list li { width: auto; font-size: 18px;
+                font-weight: 600; padding: 0px 40px;
+                background: url(../img/lnb-dot.gif)no-repeat right 5px; }
+.work-list li:last-child { background: none;}
+.work-list li:hover,li.on-color { color: rgb(148, 187, 233);}
+.work-view { padding-top: 100px; position:relative; width: 1200px;}
+.work-view li { position: absolute; top:0; left: 0;
+                width: 1200px; text-align: left; padding-top: 20px;}
+.work-view li:not(:first-child) {display: none;}
+.work-view li h5 { font-size: 18px; color: #888; 
+                font-weight: 300; margin-bottom: 10px;}
+.work-view li h3 { font-size: 26px;
                 margin-bottom: 20px;}
-.work-view li p { font-size: 20px; line-height: 25px; margin-bottom: 50px;}
+.work-view li p { font-size: 18px; line-height: 30px; 
+        width: 40%;
+        margin-bottom: 50px;}
 .main-btn,.sub-btn { font-size: 18px; margin-right: 10px;
         padding: 10px 30px; border: 1px solid #666;
         border-radius: 50px;}
-.main-btn:hover,.sub-btn:hover { background-color: #eee ; border: #eee;}
-.work-view img { width: 100%;}
+.main-btn:hover,.sub-btn:hover { background-color: #666 ; color: #fff;}
+
+.work-view li .view-img { position: absolute; top: 20px; right: 0;
+        width: 75%; height:500px; }
+.work-view li:nth-child(1) .view-img { background: url(../img/view6.png) no-repeat right; 
+        background-size: contain;}
+.work-view li:nth-child(2) .view-img { background: url(../img/view5.png) no-repeat right; 
+        background-size: contain;}
+.work-view li:nth-child(3) .view-img { background: url(../img/view4.png) no-repeat right; 
+        background-size: contain;}
+.work-view li:nth-child(4) .view-img { background: url(../img/view3.png) no-repeat right; 
+        background-size: contain;}
+.work-view li:nth-child(5) .view-img { background: url(../img/view2.png) no-repeat right; 
+        background-size: contain;}
+.work-view li:nth-child(6) .view-img { background: url(../img/view1.png) no-repeat right; 
+        background-size: contain;}
+
+/* contact */
+#contact { position: relative;}
+.contact-info { display: flex; justify-content: space-around; }
+.contact-info div { width: 30%;}
+.c-bottom { position: absolute; bottom: 0; 
+        width: 100%; height: 150px; background: #eee;}
+.c-bottom p { margin-top: 50px;}
