@@ -13,24 +13,7 @@ $(document).ready(function(){
   // });
 });
 
-const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.navi-menu a[href*=' + sectionId + ']').classList.add('on')
-        }else{
-            document.querySelector('.navi-menu a[href*=' + sectionId + ']').classList.remove('on')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
 
 
 // 메뉴 활성화시 on
@@ -46,72 +29,97 @@ $(function(){
 
 // 스크롤시 메뉴 고정
 var currentScrollTop=0;
-        $(document).ready(function(){
-        scrollController();
-        $(window).scroll(function(){
-            scrollController();
-            });
-        });
-        function scrollController(){
-        currentScrollTop = $(window).scrollTop();
-        if(currentScrollTop > 10) {
-            $('header').addClass('active_bg');
-            $('.title p a').css('color', '#000');
-            }else{
-            $('header').removeClass('active_bg');
-            $('.title p a ').css('color', '#fff');
+$(document).ready(function(){
+    scrollController();
+$(window).scroll(function(){
+    scrollController();
+    });
+});
+function scrollController(){
+currentScrollTop = $(window).scrollTop();
+if(currentScrollTop > 1) {
+    $('header').addClass('active_bg');
+    $('.title p a').css('color', '#000');
+    $('.title p a span').css('color', '#fff');
 
-            }
-        }
+    }else{
+    $('header').removeClass('active_bg');
+    $('.title p a ').css('color', '#fff');
+
+    }
+}
 
 
 // 페이지이동하면서 배경화면색 변함
 
 $(function(){
   var ws = 0;
+  var $home=$('.home');
+  var $aboutme=$('.aboutme');
+  var $skill=$('.skill');
+  var $work=$('.portpolio');
+  var $contact=$('.contact');
   $(document).scroll(function(){
      ws = $(this).scrollTop();
       // about me 
       var s1=$('#aboutme').offset().top;
-      if(ws > s1-400){
+      if(ws > s1-500){
         $('#aboutme').css('background-color', '#fff') //활성
                       .css('opacity', '1');
+        $aboutme.addClass('on');
+        $home.removeClass('on'); //비활성
+
       }else {
         $('#aboutme').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
+        $aboutme.removeClass('on');
+        $home.addClass('on');
       }
       // skill
       var s2=$('#skill').offset().top;
-      if(ws > s2-400){
+      if(ws > s2-500){
         $('#skill').css('background-color', '#fff') //흰바탕 활성
                       .css('opacity', '1');
+        $skill.addClass('on');
         $('#aboutme').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
+        $aboutme.removeClass('on');
+
       }else {
         $('#skill').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
+        $skill.removeClass('on');
       }
       // portpolio
       var s3=$('#portpolio').offset().top;
-      if(ws > s3-400){
+      
+      if(ws > s3-500){
         $('#portpolio').css('background-color', '#fff') //흰바탕 활성
                       .css('opacity', '1');
+        $work.addClass('on');
         $('#skill').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
+        $('.skill').removeClass('on');
       }else {
         $('#portpolio').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
+        $work.removeClass('on');
       }
       // contact
       var s4=$('#contact').offset().top;
-      if(ws > s4-400){
+      if(ws > s4-500){
         $('#contact').css('background-color', '#fff') //흰바탕 활성
                       .css('opacity', '1');
+        $contact.addClass('on');
         $('#portpolio').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
+        $work.removeClass('on');
+
       }else {
         $('#contact').css('background-color', '#eee') //비활성
                       .css('opacity', '0.5');
+        $contact.removeClass('on');
+
       }
   });
 });
@@ -126,8 +134,12 @@ $(function(){
 
       var view = contents.eq(index);
       contents.not(view).fadeOut("fast");
-      view.fadeIn();
+      view.fadeIn("fast");
       $(this).addClass('on-color');
       $(this).siblings().removeClass('on-color');
   });
+});
+
+$(function(){
+
 });
