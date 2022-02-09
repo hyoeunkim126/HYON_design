@@ -5,9 +5,14 @@
         src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
         font-weight: 400;
         font-style: normal;
-}
+    }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap'); 
+
+
 body{width: 100%; height: auto; }
 .container { width: 1200px; margin: 0 auto;}
+section { width: 100%; height: 900px; text-align: center;}
 
 /* 헤더 */
 header { width: 100%; height: 60px; position: absolute; top: 0;
@@ -22,8 +27,10 @@ header .container { height: 40px; padding: 20px 0;
         background-color: #333; padding: 5px 10px;
         position: absolute; bottom: 10px;}
 #menu ul { display: flex; flex-flow: row wrap; padding-top: 20px; }
-#menu ul li { margin-left: 50px; font-family: 'Pretendard-Regular';
-        font-size: 22px; font-weight: 600; font-variant: small-caps;}
+#menu ul li { margin-left: 40px; 
+        font-size: 22px; font-weight: 800; letter-spacing: 1px; 
+        font-variant: small-caps; }
+#menu ul li a { transition: 0.5s ease;}
 #menu ul li a:hover { color: #fff; }
 #menu ul li .on { color: #fff;}
 .active_bg { position: fixed; 
@@ -31,7 +38,6 @@ header .container { height: 40px; padding: 20px 0;
         rgba(148, 187, 233, 1) 100%);
         border: none; transition: 0.5s ease;}
 
-section { width: 100%; height: 900px; text-align: center;}
 /*  배경이미지 */
 #home { background: url("../img/gosung_sky.jpg") no-repeat fixed;
         background-size: cover; 
@@ -52,40 +58,50 @@ section .container h1 { font-size: 45px; font-weight: lighter;
         position: relative;}
 .photo-line { width: 100%; height: 100%; 
         position: absolute; top: 10px; left: 10px;
-         border: 2px solid rgba(31, 31, 31, 0.5);}
+        border: 2px solid rgba(31, 31, 31, 0.5);}
 #aboutme .container .text-box { width: 55%; text-align: left;}
 
 #aboutme p { font-size:20px; display: inline; line-height: 36px;
-        font-weight: 500;}
+        font-family: 'Pretendard-Regular';  font-weight: 500;}
 #aboutme .text-box span { width: 120px; color: #888; display: inline-block;}
-.hash-tag { margin: 50px;}
+.hash-tag { margin: 40px;}
 .hash-tag+div span { font-size: 22px; border: 1px solid rgba(148, 187, 233);
                 border-radius: 50px; padding: 10px 20px; margin: 10px;
                 color: rgba(148, 187, 233);}
 
 /* skill */
 #skill .container { height: 100%; }
-#skill .container div { margin-bottom: 20px;}
 .skill-title { font-size: 26px; text-align: left; margin-bottom: 20px;}
-
 .skill-title:before { content: ""; width: 20px; height: 15px;
         display: inline-block;
         background: url(../img/checkmark.svg) no-repeat center;}
-.skill-inner { display: flex; justify-content: space-between; align-items: center;}
+.skill-inner { display: flex; justify-content: space-between; 
+        align-items: center; margin-bottom: 40px;}
 .tool-logo { width: 60%; display: flex; flex-flow: row wrap; justify-content:left;
                 align-items: center;}
 .circle { width: 150px; height: 150px; margin: 10px;
-        border-radius: 50%; background-color: rgb(243, 239, 229);
-        display: flex; flex-flow: row column; align-items: center; justify-content: center;
-        }
-        
+        border-radius: 50%; background-color: #eee;
+        display: flex; flex-flow: row column; 
+        align-items: center; justify-content: center;
+        position: relative; overflow: hidden; }
+.circle img { margin-bottom: 30px;}
+.percent { position: absolute; left: 0; bottom: 0; 
+        background: linear-gradient(to top,rgba(238, 174, 202, .2) 0%,
+        rgba(148, 187, 233, .5) 100%); 
+        width: 100%; height: 0;
+        transition: .8s ease; } 
+.percent>p { padding-top: 90px; font-size: 25px; color: rgb(38, 59, 117);
+        font-weight: 900; text-shadow: 1px 1px 2px #fff;
+        font-family: "Roboto Mono";} 
+.js p { padding-top: 60px;}  
+.jquery p { padding-top: 70px;} 
 .skill-text { font-size: 20px; width: 40%; text-align: justify; 
         line-height: 30px; display: inline; padding-left: 10px;}
 
 /* work */
 .work-list { height: 30px; display: flex; flex-flow: row wrap;
         justify-content: space-around; margin-bottom: 50px;}
-.work-list li { width: auto; font-size: 18px;
+.work-list li { width: auto; font-size: 18px; 
                 font-weight: 600; padding: 0px 40px;
                 background: url(../img/lnb-dot.gif)no-repeat right 5px;
                 transition: 0.3s; }
@@ -138,12 +154,13 @@ section .container h1 { font-size: 45px; font-weight: lighter;
 .info-box:hover .overlay {opacity: 1;}
 .info-box .overlay h5 { font-size: 22px; margin-top: 50px; font-weight: 100;}
 .info-box .overlay h5::after { content: "|"; width: 1px; height: 10px;
-color: #fff; display: block; padding-left: 50%; margin: 20px 0;}
+        color: #fff; display: block; padding-left: 50%; margin: 20px 0;}
 .info-box .overlay p { font-size: 25px; color: #333; }
 
 .resolution { font-size: 30px; padding-top: 75px; line-height: 50px;
-}
+        font-family: 'Noto Serif KR', serif;}
+.resolution span { background-color: aquamarine; height: 50%;}
 footer { padding: 20px 0; text-align: center;
         width: 100%; height: 150px; background: rgb(67, 79, 117);}
 footer p { margin-top: 50px; color: #fff;}
-footer p:nth-child(2) { font-size: 15px; font-weight: 200;}
+footer p:nth-child(2) { font-size: 15px; font-weight: 200; color: #999;}
