@@ -93,8 +93,8 @@ section .container h1 { font-size: 45px; font-weight: lighter;
 .percent>p { padding-top: 90px; font-size: 25px; color: rgb(38, 59, 117);
         font-weight: 900; text-shadow: 1px 1px 2px #fff;
         font-family: "Roboto Mono";} 
-.js p { padding-top: 60px;}  
-.jquery p { padding-top: 70px;} 
+.html p,.css p,.jquery p{ padding-top: 70px;}  
+.js p { padding-top: 50px;} 
 .skill-text { font-size: 20px; width: 40%; text-align: justify; 
         line-height: 30px; display: inline; padding-left: 10px;}
 

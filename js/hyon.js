@@ -85,13 +85,13 @@ $(function(){
                       .css('opacity', '0.5');
         $aboutme.removeClass('on');
         // 퍼센트표기
-        $('.html').css('height', '91%');
-        $('.css').css('height', '90%');
-        $('.js').css('height', '70%');
+        $('.html').css('height', '80%');
+        $('.css').css('height', '80%');
+        $('.js').css('height', '68%');
         $('.jquery').css('height', '80%');
         $('.photoshop').css('height', '95%');
         $('.illu').css('height', '94%');
-        $('.papo').css('height', '92%');
+        $('.papo').css('height', '94%');
 
       }else {
         $('#skill').css('background-color', '#f9f6ec') //비활성
