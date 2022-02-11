@@ -103,12 +103,12 @@
 
         /* work */
         #portpolio{ height: 100%; padding: 0 5%;}
-        .work-list { height: 30px; display: flex; flex-flow: row wrap;
-                justify-content: space-around; margin-bottom: 100px;}
-        .work-list li { width: 20%; font-size: 18px; 
-                        font-weight: 600; padding: 0px 40px;
-                        background: url(../img/lnb-dot.gif)no-repeat right 5px;
-                        transition: 0.3s; margin-bottom: 1%;}
+        .work-list { display: flex; flex-flow: row wrap;
+                margin-bottom: 40px;}
+        .work-list li { width: 40%; font-size: 16px; 
+                font-weight: 600; padding: 10px 10px;
+                border:1px solid #eee;
+                transition: 0.3s; margin-top: -1px; margin-left: -1px;}
         .work-list li:last-child { background: none;}
         .work-list li:hover,li.on-color { color: rgb(148, 187, 233);}
         .work-view { padding-top: 100px; position:relative; 
