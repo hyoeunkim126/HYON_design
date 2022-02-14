@@ -58,7 +58,8 @@
         /* 나에 대해 */
         #aboutme .container { height: 100%; padding: 0 5%; }
         .profile { display: flex; flex-direction: column; align-items: center; }
-        .profile .photo { width: 50%; height: 200px; background-color: #888; 
+        .profile .photo { width: 33vw; height: 33vh; background: url('../img/hyon.jpg') no-repeat ;
+                background-size: cover;  
                 position: relative;}
         .photo-line { width: 100%; height: 100%; 
                 position: absolute; top: 5px; left: 5px;
@@ -67,7 +68,7 @@
 
         #aboutme p { font-size:16px; display: inline; line-height: 30px;
                 font-family: 'Pretendard-Regular';  font-weight: 500;}
-        #aboutme .text-box span { display: block; width: 100%; color: #888; display: inline-block;}
+        #aboutme .text-box span { width: 20%; color: #888; display: inline-block;}
         .hash-tag { margin-top: 40px;}
         .hash-tag+div { display: flex; flex-flow: row wrap; 
             justify-content: left; padding: 30px 10px;}
