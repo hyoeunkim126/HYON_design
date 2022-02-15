@@ -45,8 +45,8 @@
        
 
         /*  배경이미지 */
-        #home { height: 80vh;
-                background: url("../img/gosung_sky.jpg") no-repeat fixed;
+        #home { width: 100%; height: 80vh;
+                background: url("../img/gosung_sky.jpg") no-repeat;
                 background-size: cover; 
                 display: flex; justify-content: center; align-items: center;}
         .paper { width: 90%; height: 150px; 
