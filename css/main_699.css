@@ -60,9 +60,9 @@
                 margin-bottom: 50px;}
 
         /* 나에 대해 */
-        #aboutme .container { height: 100%; padding: 0 5%; }
+        #aboutme .container { height: 100%; padding: 0 1%; }
         .profile { display: flex; flex-direction: column; align-items: center; }
-        .profile .photo { width: 33vw; height: 33vh; background: url('../img/hyon.jpg') no-repeat ;
+        .profile .photo { width: 33vw; height: 25vh; background: url('../img/hyon.jpg') no-repeat ;
                 background-size: cover;  
                 position: relative;}
         .photo-line { width: 100%; height: 100%; 
@@ -70,9 +70,10 @@
                 border: 2px solid rgba(31, 31, 31, 0.5);}
         #aboutme .container .text-box { width: 90%; text-align: left; margin-top: 50px;}
 
-        #aboutme p { font-size:16px; display: inline; line-height: 30px;
-                font-family: 'Pretendard-Regular';  font-weight: 500;}
-        #aboutme .text-box span { width: 20%; color: #888; display: inline-block;}
+        #aboutme p { font-size:15px; display: inline; line-height: 28px;
+                font-family: 'Pretendard-Regular';  font-weight: 500;
+                letter-spacing: -1px;}
+        #aboutme .text-box span { width: 18%; color: #888; display: inline-block;}
         .hash-tag { margin-top: 40px;}
         .hash-tag+div { display: flex; flex-flow: row wrap; 
             justify-content: left; padding: 30px 10px;}
@@ -108,7 +109,7 @@
         .html p,.css p,.jquery p{ padding-top: 70px;}  
         .js p { padding-top: 50px;} 
         .skill-text { font-size: 18px; width: 80%; text-align: justify; 
-                line-height: 25px; display: inline;}
+                line-height: 25px; display: inline; margin-top: 20px;}
 
         /* work */
         #portpolio{ height: 100%; padding: 0 5%;}
@@ -136,8 +137,8 @@
                 border-radius: 50px;}
         .main-btn:hover,.sub-btn:hover { background-color: #666 ; color: #fff;}
 
-        .work-view li .view-img { position: absolute; top: 250px; left: 0;
-                width: 100%; height:260px; }
+        .work-view li .view-img { position: absolute; top: 250px; left: -10px;
+                width: 95%; height:260px; }
 
         .work-view li:nth-child(1) .view-img { background: url(../img/view6.png) no-repeat ; 
                 background-size: contain;}
@@ -153,9 +154,10 @@
                 background-size: contain;}
 
         /* design */
-        #design { height: 100%; padding: 0 5%;}
-        #design .container ul { display: flex; flex-wrap: wrap; } 
-        #design .container ul li {height: 150px; }
+        #design { height: 100%; padding: 0 2%;}
+        #design .container ul { display: flex; flex-wrap: wrap; justify-content: center; } 
+        #design .container ul li { width: 45%; height: auto; }
+        #design .container ul li img { width: 100%;}
 
         /* contact */
         .contact-info .container { height: 100%; padding: 0 5%; }
