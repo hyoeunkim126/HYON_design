@@ -38,6 +38,8 @@
                 rgba(148, 187, 233, 1) 100%);
                 border: none; transition: 0.5s ease;}
         #menu { display: none;}
+        #menu-700 { display: none;}
+        
         /*  배경이미지 */
         #home { height: 100vh;
                 background: url("../img/gosung_sky.jpg") no-repeat fixed;
