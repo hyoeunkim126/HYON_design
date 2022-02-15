@@ -13,9 +13,6 @@ $(document).ready(function(){
   // });
 });
 
-
-
-
 // 메뉴 활성화시 on
 $(function(){
  $('#menu ul li a').click(function(){
@@ -45,7 +42,6 @@ if(currentScrollTop > 1) {
     }else{
     $('header').removeClass('active_bg');
     $('.title p a ').css('color', '#fff');
-
     }
 }
 
@@ -113,13 +109,28 @@ $(function(){
                       .css('opacity', '0.5');
         $work.removeClass('on');
       }
-      // contact
-      var s4=$('#contact').offset().top;
+      // design
+      var s4=$('#design').offset().top;
+      
       if(ws > s4-500){
+        $('#design').css('background-color', '#fff') //흰바탕 활성
+                      .css('opacity', '1');
+        $work.addClass('on');
+        $('#portpolio').css('background-color', '#f9f6ec') //비활성
+                      .css('opacity', '0.5');
+        $('.portpolio').removeClass('on');
+      }else {
+        $('#design').css('background-color', '#f9f6ec') //비활성
+                      .css('opacity', '0.5');
+        $work.removeClass('on');
+      }
+      // contact
+      var s5=$('#contact').offset().top;
+      if(ws > s5-500){
         $('#contact').css('background-color', '#fff') //흰바탕 활성
                       .css('opacity', '1');
         $contact.addClass('on');
-        $('#portpolio').css('background-color', '#f9f6ec') //비활성
+        $('#design').css('background-color', '#f9f6ec') //비활성
                       .css('opacity', '0.5');
         $work.removeClass('on');
 

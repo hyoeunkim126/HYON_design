@@ -43,7 +43,7 @@
                 background: url("../img/gosung_sky.jpg") no-repeat fixed;
                 background-size: cover; 
                 display: flex; justify-content: center; align-items: center;}
-        .paper { width: 100%; height: 300px; 
+        .paper { width: 90%; height: 300px; 
                 background:url("../img/paper.png")no-repeat center;
                 transform: translateY(70px);  opacity: 0; transition: all 1s; }
         section .container h1 { font-size: 45px; font-weight: lighter;  
@@ -103,7 +103,7 @@
                 line-height: 25px; display: inline;}
 
         /* work */
-        #portpolio{ height: 100%; padding: 0 5%;}
+        #portpolio { height: 100%; padding: 0 5%;}
         .work-list { display: flex; flex-flow: row wrap;
                 margin-bottom: 40px;}
         .work-list li { width: 40%; font-size: 16px; 
@@ -145,8 +145,12 @@
         .work-view li:nth-child(6) .view-img { background: url(../img/view1.png) no-repeat right; 
                 background-size: contain;}
 
-        /* contact */
+        /* design */
+        #design { height: 100%; padding: 0 5%;}
+        #design .container ul { display: flex; flex-wrap: wrap; } 
+        #design .container ul li { height: 150px;}
 
+        /* contact */
         .contact-info .container { height: 100%; padding: 0 5%; }
         .contact-info { display: flex; justify-content: space-around;}
         .contact-info .info-box { width: 30%; height: 250px; 
