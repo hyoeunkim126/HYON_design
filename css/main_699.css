@@ -56,7 +56,7 @@
         section .container h1 { font-size: 45px; font-weight: lighter;  
                 font-variant: small-caps; display: inline-block; 
                 width: 200px; border-bottom: 1px solid #666;
-                padding: 20px 0 20px 0; font-family: 'Pretendard';
+                padding: 20px 0 20px 0; font-family: 'Pretendard-Regular';
                 margin-bottom: 50px;}
 
         /* 나에 대해 */
@@ -84,7 +84,7 @@
 
         /* skill */
         #skill { height: 100%;  }
-        #skill .container { padding: 0 5%;  }
+        #skill .container { padding: 0 2%;  }
         .skill-title { font-size: 26px; text-align: left; margin-bottom: 20px;}
         .skill-title:before { content: ""; width: 20px; height: 15px;
                 display: inline-block;
@@ -114,7 +114,7 @@
                 line-height: 25px; display: inline; margin-top: 20px;}
 
         /* work */
-        #portpolio{ height: 100%; padding: 0 5%;}
+        #portpolio{ height: 100%; padding: 0 2%;}
         .work-list { display: flex; flex-flow: row wrap;
                      margin-bottom: 40px;}
         .work-list li { width: 40%; font-size: 16px; 
@@ -164,7 +164,7 @@
         #design .container ul li img { width: 100%;}
 
         /* contact */
-        .contact-info .container { height: 100%; padding: 0 5%; }
+        .contact-info .container { height: 100%; padding: 0 2%; }
         .contact-info { display: flex; flex-direction: column; align-items: center;}
         .contact-info .info-box { width: 70%; height: 150px; 
                 margin-bottom: 2%;

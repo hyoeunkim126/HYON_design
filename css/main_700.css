@@ -51,7 +51,7 @@
         section .container h1 { font-size: 45px; font-weight: lighter;  
                 font-variant: small-caps; display: inline-block; 
                 width: 200px; border-bottom: 1px solid #666;
-                padding: 20px 0 20px 0;
+                padding: 20px 0 20px 0; font-family: 'Pretendard-Regular';
                 margin-bottom: 50px;}
 
         /* 나에 대해 */
