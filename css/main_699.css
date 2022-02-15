@@ -138,7 +138,7 @@
                 margin-bottom: 7%;}
         .main-btn,.sub-btn { font-size: 18px; margin-right: 1%;
                 padding: 10px 30px; border: 1px solid #666;
-                border-radius: 50px;}
+                border-radius: 50px; font-family: 'Pretendard-Regular';}
         .main-btn:hover,.sub-btn:hover { background-color: #666 ; color: #fff;}
 
         .work-view li .view-img { position: absolute; top: 250px; left: -10px;
