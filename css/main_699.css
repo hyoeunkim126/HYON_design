@@ -62,7 +62,8 @@
         /* 나에 대해 */
         #aboutme .container { height: 100%; padding: 0 1%; }
         .profile { display: flex; flex-direction: column; align-items: center; }
-        .profile .photo { width: 33vw; height: 25vh; background: url('../img/hyon.jpg') no-repeat ;
+        .profile .photo { width: 33vw; height: 25vh; 
+                background: url('../img/hyon.jpg') no-repeat ;
                 background-size: cover;  
                 position: relative;}
         .photo-line { width: 100%; height: 100%; 
@@ -76,7 +77,7 @@
         #aboutme .text-box span { width: 18%; color: #888; display: inline-block;}
         .hash-tag { margin-top: 40px;}
         .hash-tag+div { display: flex; flex-flow: row wrap; 
-            justify-content: left; padding: 30px 10px;}
+                 justify-content: left; padding: 30px 10px;}
         .hash-tag+div span { font-size: 20px; border: 1px solid rgba(148, 187, 233);
                         border-radius: 50px; padding: 10px 20px; margin: 5px;
                         color: rgba(148, 187, 233);}
@@ -88,7 +89,8 @@
         .skill-title:before { content: ""; width: 20px; height: 15px;
                 display: inline-block;
                 background: url(../img/checkmark.svg) no-repeat center;}
-        .skill-inner { display: flex; flex-direction: column; justify-content: space-around; 
+        .skill-inner { display: flex; flex-direction: column; 
+                justify-content: space-around; 
                 margin-bottom: 40px;}
         .tool-logo { width: 90%; display: flex; flex-flow: row wrap;
                       align-items: center;}
@@ -116,12 +118,14 @@
         .work-list { display: flex; flex-flow: row wrap;
                      margin-bottom: 40px;}
         .work-list li { width: 40%; font-size: 16px; 
+                        font-family: 'Pretendard-Regular';
                         font-weight: 600; padding: 10px 10px;
                         border:1px solid #eee;
-                        transition: 0.3s; margin-top: -1px; margin-left: -1px;}
+                        transition: 0.3s; 
+                        margin-top: -1px; margin-left: -1px;}
         .work-list li:hover,li.on-color { color: rgb(148, 187, 233);}
         .work-view { padding-top: 100px; position:relative; 
-              width: 100%; height: 450px;}
+                width: 100%; height: 450px;}
         .work-view li { position: absolute; top:0; left: 0;
                         width: 100%; text-align: left; padding-top: 20px;}
         .work-view li:not(:first-child) {display: none;}
