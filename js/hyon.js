@@ -54,6 +54,7 @@ $(function(){
   var $aboutme=$('.aboutme');
   var $skill=$('.skill');
   var $work=$('.portpolio');
+  var $design=$('.design');
   var $contact=$('.contact');
   $(document).scroll(function(){
      ws = $(this).scrollTop();
@@ -115,14 +116,14 @@ $(function(){
       if(ws > s4-500){
         $('#design').css('background-color', '#fff') //흰바탕 활성
                       .css('opacity', '1');
-        $work.addClass('on');
+        $design.addClass('on');
         $('#portpolio').css('background-color', '#f9f6ec') //비활성
                       .css('opacity', '0.5');
-        $('.portpolio').removeClass('on');
+        $work.removeClass('on');
       }else {
         $('#design').css('background-color', '#f9f6ec') //비활성
                       .css('opacity', '0.5');
-        $work.removeClass('on');
+        $design.removeClass('on');
       }
       // contact
       var s5=$('#contact').offset().top;
@@ -132,7 +133,7 @@ $(function(){
         $contact.addClass('on');
         $('#design').css('background-color', '#f9f6ec') //비활성
                       .css('opacity', '0.5');
-        $work.removeClass('on');
+        $design.removeClass('on');
 
       }else {
         $('#contact').css('background-color', '#f9f6ec') //비활성
