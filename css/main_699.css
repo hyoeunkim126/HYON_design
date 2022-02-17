@@ -40,8 +40,27 @@
                 background: linear-gradient(to right,rgba(238, 174, 202, 1) 0%,
                 rgba(148, 187, 233, 1) 100%);
                 border: none; transition: 0.5s ease;}
-        #menu, #menu-700 { display: none;}
-        #menu-700 span { display: block;}
+        #menu { display: none;}
+        #mySidebar { width: 0;
+                position: fixed;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background-color: #fff;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;}
+        #mySidebar li { font-size: 30px; margin: 0 30px; 
+                padding: 20px; line-height: 35px; border-bottom: 1px solid #eee;}
+        
+        #mySidebar .closebtn { position: absolute;
+                top: 25px;
+                right: 25px;
+                font-size: 50px;
+                margin-left: 50px;}
+        #menu-700 span { display: block;
+                        padding: 20px;}
        
 
         /*  배경이미지 */
