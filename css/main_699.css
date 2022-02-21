@@ -41,7 +41,16 @@
                 rgba(148, 187, 233, 1) 100%);
                 border: none; transition: 0.5s ease;}
         #menu { display: none;}
-        #mySidebar { width: 0;
+        #mySidebar-bg { width: 0;
+                position: fixed;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.637);
+                overflow-x: hidden;
+                transition: 0.1s;}
+        #mySidebar, #mySidebar-bg  { width: 0;
                 position: fixed;
                 z-index: 1;
                 height: 100%;
@@ -51,9 +60,10 @@
                 overflow-x: hidden;
                 transition: 0.1s;
                 padding-top: 60px;}
+                
         #mySidebar>ul li { font-size: 25px; margin: 0 40px; 
-                padding: 20px; line-height: 35px; border-bottom: 1px solid #eee;}
-        #mySidebar>ul li a { font-family: 'Pretendard-Regular'; }
+                padding: 15px; line-height: 35px; border-bottom: 1px solid #eee;}
+        #mySidebar>ul li a,.sidebar-bottom p { font-family: 'Pretendard-Regular'; }
         
         #mySidebar .closebtn { position: absolute;
                 top: 25px;
@@ -63,7 +73,7 @@
         #menu-700 span { display: block;
                         padding: 20px;}
         .sidebar-bottom { position: absolute; 
-                bottom: 150px; left: 10px;}
+                bottom: 100px; left: 10px;}
         .sidebar-bottom ul li { display: flex; align-items: center;
                         margin: 20px;}
         #mySidebar ion-icon { font-size: 30px;}

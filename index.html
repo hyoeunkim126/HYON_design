@@ -38,34 +38,39 @@
                 </div>
                 <div id="menu-700" class="navi-menu-700">
                     <span style="font-size:35px; cursor:pointer" onclick="openNav()">&#9776;</span>
-                    <div id="mySidebar">
-                        <ul>
-                            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
-                            <li><a href="#home" class="home on">home</a></li>
-                            <li><a href="#aboutme" class="aboutme">about me</a></li>
-                            <li><a href="#skill" class="skill">skill</a></li>
-                            <li><a href="#portpolio" class="portpolio">portpolio</a></li>
-                            <li><a href="#design" class="design">design</a></li>
-                            <li><a href="#contact" class="contact">contact</a></li>
-                        </ul>
-                        
-                        <div class="sidebar-bottom">
+                    <div id="mySidebar-bg">
+                        <div id="mySidebar">
                             <ul>
-                                <li><ion-icon name="logo-whatsapp"></ion-icon>
-                                     <p>010-9809-8780</p>
-                                </li>
-                                <li><ion-icon name="mail-outline"></ion-icon>
-                                    <p>hyoeun126@naver.com</p>
-                                </li>
+                                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+                                <li><a href="#home" class="home on">home</a></li>
+                                <li><a href="#aboutme" class="aboutme">about me</a></li>
+                                <li><a href="#skill" class="skill">skill</a></li>
+                                <li><a href="#portpolio" class="portpolio">portpolio</a></li>
+                                <li><a href="#design" class="design">design</a></li>
+                                <li><a href="#contact" class="contact">contact</a></li>
                             </ul>
+                            
+                            <div class="sidebar-bottom">
+                                <ul>
+                                    <li><ion-icon name="logo-whatsapp"></ion-icon>
+                                        <p>010-9809-8780</p>
+                                    </li>
+                                    <li><ion-icon name="mail-outline"></ion-icon>
+                                        <p>hyoeun126@naver.com</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <script>
                     function openNav() {
+                      document.getElementById("mySidebar-bg").style.width = "100%";
                       document.getElementById("mySidebar").style.width = "250px";
                     }
                     function closeNav() {
+                    document.getElementById("mySidebar-bg").style.width = "0";
+
                       document.getElementById("mySidebar").style.width = "0";
                     }
 
