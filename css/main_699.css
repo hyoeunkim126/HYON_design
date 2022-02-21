@@ -51,9 +51,10 @@
                 overflow-x: hidden;
                 transition: 0.1s;
                 padding-top: 60px;}
-        #mySidebar li { font-size: 30px; margin: 0 30px; 
+        #mySidebar>ul li { font-size: 25px; margin: 0 40px; 
                 padding: 20px; line-height: 35px; border-bottom: 1px solid #eee;}
-        #mySidebar li a { font-family: 'Pretendard-Regular'; }
+        #mySidebar>ul li a { font-family: 'Pretendard-Regular'; }
+        
         #mySidebar .closebtn { position: absolute;
                 top: 25px;
                 right: 25px;
@@ -61,6 +62,12 @@
                 margin-left: 50px;}
         #menu-700 span { display: block;
                         padding: 20px;}
+        .sidebar-bottom { position: absolute; 
+                bottom: 150px; left: 10px;}
+        .sidebar-bottom ul li { display: flex; align-items: center;
+                        margin: 20px;}
+        #mySidebar ion-icon { font-size: 30px;}
+        #mySidebar p { font-size: 12px; padding-left: 20px;}
        
 
         /*  배경이미지 */

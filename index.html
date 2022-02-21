@@ -11,6 +11,8 @@
     <link href="css/main_699.css" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/hyon.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <style>
         h1{ font-size:  2rem; }
         h3{ font-size: 1.25rem; }
@@ -36,15 +38,28 @@
                 </div>
                 <div id="menu-700" class="navi-menu-700">
                     <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
-                    <ul id="mySidebar">
-                        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
-                        <li><a href="#home" class="home on">home</a></li>
-                        <li><a href="#aboutme" class="aboutme">about me</a></li>
-                        <li><a href="#skill" class="skill">skill</a></li>
-                        <li><a href="#portpolio" class="portpolio">portpolio</a></li>
-                        <li><a href="#design" class="design">design</a></li>
-                        <li><a href="#contact" class="contact">contact</a></li>
-                    </ul>
+                    <div id="mySidebar">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+                            <li><a href="#home" class="home on">home</a></li>
+                            <li><a href="#aboutme" class="aboutme">about me</a></li>
+                            <li><a href="#skill" class="skill">skill</a></li>
+                            <li><a href="#portpolio" class="portpolio">portpolio</a></li>
+                            <li><a href="#design" class="design">design</a></li>
+                            <li><a href="#contact" class="contact">contact</a></li>
+                        </ul>
+                        
+                        <div class="sidebar-bottom">
+                            <ul>
+                                <li><ion-icon name="logo-whatsapp"></ion-icon>
+                                     <p>010-9809-8780</p>
+                                </li>
+                                <li><ion-icon name="mail-outline"></ion-icon>
+                                    <p>hyoeun126@naver.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <script>
                     function openNav() {
@@ -55,7 +70,7 @@
                     }
 
                     $(function(){
-                        $("#mySidebar li a").click(function(){
+                        $("#mySidebar>ul li a").click(function(){
                             document.getElementById("mySidebar").style.width = "0";
                         });
                     });
