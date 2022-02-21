@@ -49,7 +49,7 @@
                 right: 0;
                 background-color: #fff;
                 overflow-x: hidden;
-                transition: 0.2s;
+                transition: 0.1s;
                 padding-top: 60px;}
         #mySidebar li { font-size: 30px; margin: 0 30px; 
                 padding: 20px; line-height: 35px; border-bottom: 1px solid #eee;}

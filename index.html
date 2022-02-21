@@ -49,13 +49,16 @@
                 <script>
                     function openNav() {
                       document.getElementById("mySidebar").style.width = "250px";
-                      
                     }
-                    
                     function closeNav() {
                       document.getElementById("mySidebar").style.width = "0";
-                      
                     }
+
+                    $(function(){
+                        $("#mySidebar li a").click(function(){
+                            document.getElementById("mySidebar").style.width = "0";
+                        });
+                    });
                     </script>
             </div>            
         </header>
