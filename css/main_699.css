@@ -151,11 +151,11 @@
 
         /* work */
         #portpolio{ height: 100%; }
-        #portpolio .container { padding: 0 2%; }
+        #portpolio .container { padding: 0 4%; }
         .work-list { display: flex; flex-flow: row wrap;
                      margin-bottom: 40px;}
-        .work-list li { width: 45%; font-size: 16px; 
-                        font-family: 'Pretendard';
+        .work-list li { width: 43%; font-size: 16px; 
+                        font-family: 'Pretendard-Regular';
                         font-weight: 600; padding: 10px 10px;
                         border:1px solid #eee;
                         transition: 0.3s; letter-spacing: -1px;
@@ -212,7 +212,7 @@
                 border-radius: 15px; overflow: hidden; 
                 display: flex; flex-direction: column; 
                 justify-content: center;}
-        .info-box img {  width: 20%; margin: 0 auto;}
+        .info-box img {  width: 15%; margin: 0 auto;}
 
         .overlay { position: absolute; left: 0; bottom: 0; right: 0; 
                 background-color: rgba(238, 174, 202, 1); 
