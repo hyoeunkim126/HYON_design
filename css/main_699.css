@@ -206,7 +206,7 @@
         /* contact */
         .contact-info .container { height: 100%; padding: 0 2%; }
         .contact-info { display: flex; flex-direction: column; align-items: center;}
-        .contact-info .info-box { width: 70%; height: 150px; 
+        .contact-info .info-box { width: 50%; height: 150px; 
                 margin-bottom: 2%;
                 background-color: #eee; position: relative;
                 border-radius: 15px; overflow: hidden; 
