@@ -63,7 +63,7 @@
         #menu-700 span { display: block;
                         padding: 20px;}
         .sidebar-bottom { position: absolute; 
-                bottom: 100px; left: 3vw;}
+                top: 600px; left: 3vw;}
         .sidebar-bottom ul li { display: flex; align-items: center;
                         margin: 20px;}
         #mySidebar ion-icon { font-size: 30px;}
