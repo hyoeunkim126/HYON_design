@@ -63,7 +63,7 @@
         #menu-700 span { display: block;
                         padding: 20px;}
         .sidebar-bottom { position: absolute; 
-                bottom: 150px; left: 10px;}
+                bottom: 100px; left: 3vw;}
         .sidebar-bottom ul li { display: flex; align-items: center;
                         margin: 20px;}
         #mySidebar ion-icon { font-size: 30px;}
@@ -75,7 +75,7 @@
                 background-size: cover; 
                 display: flex; justify-content: center; align-items: center;}
         .paper { width: 90%; height: 300px; 
-                background:url("../img/paper.png")no-repeat center;
+                background:url("../img/paper.png") no-repeat center;
                 transform: translateY(70px);  opacity: 0; transition: all 1s; }
         section .container h1 { font-size: 45px; font-weight: lighter;  
                 font-variant: small-caps; display: inline-block; 
@@ -86,7 +86,9 @@
         /* 나에 대해 */
         #aboutme .container { height: 100%; padding: 0 5%; }
         .profile { display: flex; flex-direction: row; justify-content: space-between;}
-        .profile .photo { width: 20%; height: 30vh; background: url('../img/hyon.jpg') no-repeat ;
+        .profile .photo { width: 20%; height: 30vh; 
+                /* background: url('../img/hyon.jpg') no-repeat ; */
+                background-color: antiquewhite;
                 background-size: cover;  
                 position: relative;}
         .photo-line { width: 100%; height: 100%; 
@@ -141,6 +143,7 @@
                 font-weight: 600; padding: 10px 10px;
                 border:1px solid #eee;
                 transition: 0.3s; margin-top: -1px; margin-left: -1px;}
+        .work-list li:hover{cursor: pointer;}
         .work-list li:last-child { background: none;}
         .work-list li:hover,li.on-color { color: rgb(148, 187, 233);}
         .work-view { padding-top: 100px; position:relative; 
